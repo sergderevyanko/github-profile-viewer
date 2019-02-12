@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
+import RepoList from './RepoList.jsx'
 
 class Profile extends Component{
 
@@ -45,13 +46,14 @@ class Profile extends Component{
                                 <a href={this.props.userData.html_url} className="btn btn-primary">Visit Profile</a>
                             </div>
                         </div>
-
                     </div>
+                    <hr />
+                    <h3>User repositories</h3>
+                    <RepoList userRepos={this.props.userRepos}/>
                 </div>
             </div>
         )
     }
-
 }
 
 export default Profile
