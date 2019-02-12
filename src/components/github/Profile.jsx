@@ -6,12 +6,6 @@ class Profile extends Component{
 
     constructor(props){
         super(props);
-        // this.state = {
-        //     username: 'sergderevyanko',
-        //     userData: [],
-        //     userRepos: [],
-        //     perPage: 5
-        // }
     }
 
 
